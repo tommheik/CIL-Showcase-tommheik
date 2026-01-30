@@ -1,3 +1,5 @@
+# Tommi Heikkilä 2026, LUT
+
 import napari
 import cil
 import numpy as np
@@ -32,6 +34,7 @@ class napari_viewer():
         return
 
     def _set_units_and_labels(self, dim_labels=None, units=None):
+        """Helper function to set specific values and set them to be visible"""
         if dim_labels:
             self.viewer.dims.axis_labels = dim_labels
             self.viewer.axes.visible = True
